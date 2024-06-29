@@ -146,6 +146,7 @@ const HeroSection = () => {
           mb={{ base: '4rem', xl: '0' }}
           mt={{ base: '2rem', xl: '0' }}
           textTransform="uppercase"
+          maxW={{ base: 'full', xl: '40%' }}
         >
           2025 In-Person Hackathon • Coming Soon
         </Text>

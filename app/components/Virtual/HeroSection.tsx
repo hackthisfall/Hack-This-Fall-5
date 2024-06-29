@@ -145,7 +145,6 @@ const HeroSection = () => {
           fontStyle="italic"
           mb={{ base: '4rem', xl: '0' }}
           mt={{ base: '2rem', xl: '0' }}
-          maxW={{ base: 'auto', xl: '40%' }}
         >
           VIRTUAL HACKATHON · 8 - 10 NOV 2024
         </Text>
