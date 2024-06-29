@@ -26,7 +26,13 @@ const HeroSection = () => {
     >
       {!isMobile ? (
         <>
-          <Flex w="full" justifyContent="space-between" mb="2rem">
+          <Flex
+            w="full"
+            justifyContent="center"
+            gap="2rem"
+            alignItems="center"
+            mb="2rem"
+          >
             <Heading
               color="#282826"
               fontFamily="var(--font-roboto-flex)"
@@ -46,7 +52,13 @@ const HeroSection = () => {
               alt="Pill"
             />
           </Flex>
-          <Flex w="full" justifyContent="space-between" mb="5rem">
+          <Flex
+            w="full"
+            justifyContent="center"
+            gap="2rem"
+            alignItems="center"
+            mb="5rem"
+          >
             <Image
               h={{ md: '5rem', lg: '6rem', xl: '7rem', '2xl': '9rem' }}
               src="/images/icons/yellowPill.svg"
@@ -69,7 +81,7 @@ const HeroSection = () => {
         </>
       ) : (
         <>
-          <Heading
+          {/* <Heading
             color="#282826"
             fontFamily="var(--font-roboto-flex)"
             fontSize={{ base: '3rem', sm: '3.5rem' }}
@@ -127,7 +139,8 @@ const HeroSection = () => {
             >
               GOOD
             </Heading>
-          </Flex>
+          </Flex> */}
+          <Image src="/images/Hero.svg" alt="Hero" w="90%" mb="2rem" />
         </>
       )}
       <Flex
@@ -136,20 +149,35 @@ const HeroSection = () => {
         justifyContent="space-between"
         alignItems="center"
       >
-        <Text
-          color="#282826"
-          fontFamily="var(--font-roboto-flex)"
-          fontSize={{ base: '1.5rem', xl: '2rem' }}
-          textAlign={{ base: 'center', xl: 'left' }}
-          fontWeight="600"
-          fontStyle="italic"
-          mb={{ base: '4rem', xl: '0' }}
-          mt={{ base: '2rem', xl: '0' }}
-          textTransform="uppercase"
-          maxW={{ base: 'full', xl: '40%' }}
-        >
-          2025 In-Person Hackathon • Coming Soon
-        </Text>
+        {isMobile ? (
+          <Text
+            color="#282826"
+            fontFamily="var(--font-roboto-flex)"
+            fontSize={{ base: '1.5rem', xl: '2rem' }}
+            textAlign={{ base: 'center', xl: 'left' }}
+            fontWeight="600"
+            fontStyle="italic"
+            textTransform="uppercase"
+            mb={{ base: '4rem', xl: '0' }}
+            mt={{ base: '2rem', xl: '0' }}
+          >
+            2025 In-Person Hackathon <br /> Coming Soon
+          </Text>
+        ) : (
+          <Text
+            color="#282826"
+            fontFamily="var(--font-roboto-flex)"
+            fontSize={{ base: '1.5rem', xl: '1.7rem' }}
+            textAlign={{ base: 'center', xl: 'left' }}
+            fontWeight="600"
+            fontStyle="italic"
+            textTransform="uppercase"
+            mb={{ base: '4rem', xl: '0' }}
+            mt={{ base: '2rem', xl: '0' }}
+          >
+            2025 In-Person Hackathon • Coming Soon
+          </Text>
+        )}
         <Flex
           flexDir={{ base: 'column', md: 'row' }}
           gap={{ base: '1rem', xl: '1.5rem' }}

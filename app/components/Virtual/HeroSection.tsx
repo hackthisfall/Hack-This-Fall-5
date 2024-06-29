@@ -69,7 +69,7 @@ const HeroSection = () => {
         </>
       ) : (
         <>
-          <Heading
+          {/* <Heading
             color="#282826"
             fontFamily="var(--font-roboto-flex)"
             fontSize={{ base: '3rem', sm: '3.5rem' }}
@@ -127,7 +127,8 @@ const HeroSection = () => {
             >
               GOOD
             </Heading>
-          </Flex>
+          </Flex> */}
+          <Image src="/images/Hero.svg" alt="Hero" w="90%" mb="2rem" />
         </>
       )}
       <Flex
@@ -136,18 +137,33 @@ const HeroSection = () => {
         justifyContent="space-between"
         alignItems="center"
       >
-        <Text
-          color="#282826"
-          fontFamily="var(--font-roboto-flex)"
-          fontSize={{ base: '1.5rem', xl: '2rem' }}
-          textAlign={{ base: 'center', xl: 'left' }}
-          fontWeight="600"
-          fontStyle="italic"
-          mb={{ base: '4rem', xl: '0' }}
-          mt={{ base: '2rem', xl: '0' }}
-        >
-          VIRTUAL HACKATHON · 8 - 10 NOV 2024
-        </Text>
+        {isMobile ? (
+          <Text
+            color="#282826"
+            fontFamily="var(--font-roboto-flex)"
+            fontSize={{ base: '1.5rem', xl: '2rem' }}
+            textAlign={{ base: 'center', xl: 'left' }}
+            fontWeight="600"
+            fontStyle="italic"
+            mb={{ base: '4rem', xl: '0' }}
+            mt={{ base: '2rem', xl: '0' }}
+          >
+            VIRTUAL HACKATHON <br/> 8 - 10 NOV 2024
+          </Text>
+        ) : (
+          <Text
+            color="#282826"
+            fontFamily="var(--font-roboto-flex)"
+            fontSize={{ base: '1.5rem', xl: '2rem' }}
+            textAlign={{ base: 'center', xl: 'left' }}
+            fontWeight="600"
+            fontStyle="italic"
+            mb={{ base: '4rem', xl: '0' }}
+            mt={{ base: '2rem', xl: '0' }}
+          >
+            VIRTUAL HACKATHON · 8 - 10 NOV 2024
+          </Text>
+        )}
         <Flex
           flexDir={{ base: 'column', md: 'row' }}
           gap={{ base: '1rem', xl: '1.5rem' }}
