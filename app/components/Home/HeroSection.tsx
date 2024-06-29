@@ -6,6 +6,7 @@ import {
   Flex,
   Heading,
   Image,
+  Link,
   Text,
   useBreakpointValue,
 } from '@chakra-ui/react';
@@ -29,21 +30,37 @@ const HeroSection = () => {
             <Heading
               color="#282826"
               fontFamily="var(--font-roboto-flex)"
-              fontSize="9rem"
+              fontSize={{ md: '5rem', lg: '6rem', xl: '7rem', '2xl': '9rem' }}
               fontWeight="600"
             >
               INNOVATE
             </Heading>
-            <Image src="/images/icons/star.svg" alt="Star" />
-            <Image src="/images/icons/pill.svg" alt="Pill" />
+            <Image
+              h={{ md: '5rem', lg: '6rem', xl: '7rem', '2xl': '9rem' }}
+              src="/images/icons/star.svg"
+              alt="Star"
+            />
+            <Image
+              h={{ md: '5rem', lg: '6rem', xl: '7rem', '2xl': '9rem' }}
+              src="/images/icons/pill.svg"
+              alt="Pill"
+            />
           </Flex>
           <Flex w="full" justifyContent="space-between" mb="5rem">
-            <Image src="/images/icons/yellowPill.svg" alt="Yellow Pill" />
-            <Image src="/images/icons/arrows.svg" alt="Arrows" />
+            <Image
+              h={{ md: '5rem', lg: '6rem', xl: '7rem', '2xl': '9rem' }}
+              src="/images/icons/yellowPill.svg"
+              alt="Yellow Pill"
+            />
+            <Image
+              h={{ md: '5rem', lg: '6rem', xl: '7rem', '2xl': '9rem' }}
+              src="/images/icons/arrows.svg"
+              alt="Arrows"
+            />
             <Heading
               color="#282826"
               fontFamily="var(--font-roboto-flex)"
-              fontSize="9rem"
+              fontSize={{ md: '5rem', lg: '6rem', xl: '7rem', '2xl': '9rem' }}
               fontWeight="600"
             >
               FOR GOOD
@@ -114,7 +131,7 @@ const HeroSection = () => {
         </>
       )}
       <Flex
-        flexDir={{ base: 'column', md: 'row' }}
+        flexDir={{ base: 'column', xl: 'row' }}
         w="full"
         justifyContent="space-between"
         alignItems="center"
@@ -122,27 +139,31 @@ const HeroSection = () => {
         <Text
           color="#282826"
           fontFamily="var(--font-roboto-flex)"
-          fontSize={{ base: '1.5rem', md: '2rem' }}
-          textAlign={{ base: 'center', md: 'left' }}
+          fontSize={{ base: '1.5rem', xl: '2rem' }}
+          textAlign={{ base: 'center', xl: 'left' }}
           fontWeight="600"
           fontStyle="italic"
-          mb={{ base: '4rem', md: '0' }}
-          mt={{ base: '2rem', md: '0' }}
+          mb={{ base: '4rem', xl: '0' }}
+          mt={{ base: '2rem', xl: '0' }}
+          textTransform="uppercase"
         >
-          VIRTUAL HACKATHON · 8 - 10 NOV 2024
+          2025 In-Person Hackathon • Coming Soon
         </Text>
         <Flex
           flexDir={{ base: 'column', md: 'row' }}
-          gap={{ base: '1rem', md: '1.5rem' }}
-          w={{ base: 'full', md: 'auto' }}
+          gap={{ base: '1rem', xl: '1.5rem' }}
+          w={{ base: 'full', xl: 'auto' }}
         >
           <Button
+            as={Link}
+            href="https://discord.hackthisfall.tech"
+            target="_blank"
             color="#282826"
             fontFamily="var(--font-roboto-flex)"
             fontSize="1.5rem"
             fontWeight="600"
             bg="transparent"
-            w={{ base: 'full', md: 'auto' }}
+            w={{ base: 'full', xl: 'auto' }}
             px="2.5rem"
             py="2rem"
             borderRadius="full"
@@ -153,6 +174,8 @@ const HeroSection = () => {
             Join Discord
           </Button>
           <Button
+            as={Link}
+            href="/virtual"
             color="#fff"
             fontFamily="var(--font-roboto-flex)"
             fontSize="1.5rem"
@@ -160,13 +183,13 @@ const HeroSection = () => {
             bg="#746BEB"
             px="2.5rem"
             py="2rem"
-            w={{ base: 'full', md: 'auto' }}
+            w={{ base: 'full', xl: 'auto' }}
             borderRadius="full"
             border="2px solid #282826"
             boxShadow="2.95px 2.95px 0px 0px #000000"
             _hover={{ bg: '#746BEB', boxShadow: 'none' }}
           >
-            Pre-Register Now <ArrowForwardIcon ml="0.5rem" />
+            Join Virtually <ArrowForwardIcon ml="0.5rem" />
           </Button>
         </Flex>
       </Flex>
