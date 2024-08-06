@@ -1,7 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/next';
-import { Roboto_Flex, Roboto_Condensed } from 'next/font/google';
+import { Roboto_Flex, Roboto_Condensed, Outfit } from 'next/font/google';
 import { Providers } from './providers';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
@@ -14,6 +14,12 @@ const robotoFlex = Roboto_Flex({
 const robotoCondensed = Roboto_Condensed({
   subsets: ['latin'],
   variable: '--font-roboto-condensed',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+});
+
+const outfit = Outfit({
+  subsets: ['latin'],
+  variable: '--font-outfit',
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
@@ -57,7 +63,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${robotoFlex.variable} ${robotoCondensed.variable}`}>
+      <body className={`${robotoFlex.variable} ${robotoCondensed.variable} ${outfit.variable}`}>
         <Providers>
           {children}
           <Analytics />

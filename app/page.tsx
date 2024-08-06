@@ -4,6 +4,8 @@ import { Flex } from '@chakra-ui/react';
 import HeroSection from './components/Home/HeroSection';
 import HumansSection from './components/Home/HumansSection';
 import TracksSection from './components/Home/TracksSection';
+import PreviousPartnersSection from './components/Home/PreviousPartnersSection';
+import FaqSection from './components/Home/FaqSection';
 
 const Page = () => {
   return (
@@ -11,6 +13,8 @@ const Page = () => {
       <HeroSection />
       <TracksSection />
       <HumansSection />
+      <PreviousPartnersSection />
+      <FaqSection />
     </Flex>
   );
 };
