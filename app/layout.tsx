@@ -1,13 +1,19 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/next';
-import { Roboto_Flex } from 'next/font/google';
+import { Roboto_Flex, Roboto_Condensed } from 'next/font/google';
 import { Providers } from './providers';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const robotoFlex = Roboto_Flex({
   subsets: ['latin'],
   variable: '--font-roboto-flex',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+});
+
+const robotoCondensed = Roboto_Condensed({
+  subsets: ['latin'],
+  variable: '--font-roboto-condensed',
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
@@ -51,7 +57,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${robotoFlex.variable}`}>
+      <body className={`${robotoFlex.variable} ${robotoCondensed.variable}`}>
         <Providers>
           {children}
           <Analytics />

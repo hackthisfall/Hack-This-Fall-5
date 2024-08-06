@@ -29,8 +29,8 @@ const HeroSection = () => {
           <Flex w="full" justifyContent="space-between" mb="2rem">
             <Heading
               color="#282826"
-              fontFamily="var(--font-roboto-flex)"
-              fontSize={{ md: "5rem", lg: "6rem", xl: "7rem", "2xl": "9rem" }}
+              fontFamily="var(--font-roboto-condensed)"
+              fontSize={{ md: '5rem', lg: '6rem', xl: '7rem', '2xl': '9rem' }}
               fontWeight="600"
             >
               INNOVATE
@@ -59,8 +59,8 @@ const HeroSection = () => {
             />
             <Heading
               color="#282826"
-              fontFamily="var(--font-roboto-flex)"
-              fontSize={{ md: "5rem", lg: "6rem", xl: "7rem", "2xl": "9rem" }}
+              fontFamily="var(--font-roboto-condensed)"
+              fontSize={{ md: '5rem', lg: '6rem', xl: '7rem', '2xl': '9rem' }}
               fontWeight="600"
             >
               FOR GOOD
@@ -69,65 +69,6 @@ const HeroSection = () => {
         </>
       ) : (
         <>
-          {/* <Heading
-            color="#282826"
-            fontFamily="var(--font-roboto-flex)"
-            fontSize={{ base: '3rem', sm: '3.5rem' }}
-            fontWeight="900"
-            mb="0.5rem"
-          >
-            INNOVATE
-          </Heading>
-          <Flex
-            alignItems="center"
-            w="95%"
-            justifyContent="space-between"
-            mb="0.5rem"
-          >
-            <Heading
-              color="#282826"
-              fontFamily="var(--font-roboto-flex)"
-              fontSize={{ base: '3rem', sm: '3.5rem' }}
-              fontWeight="900"
-            >
-              FOR
-            </Heading>
-            <Image
-              h={{ base: '3rem', sm: '3.5rem' }}
-              src="/images/icons/skinArrows.svg"
-              alt="Star"
-            />
-            <Image
-              h={{ base: '3rem', sm: '3.5rem' }}
-              src="/images/icons/pill.svg"
-              alt="Pill"
-            />
-          </Flex>
-          <Flex
-            alignItems="center"
-            w="full"
-            justifyContent="space-between"
-            mb={{ base: '2rem', md: '5rem' }}
-          >
-            <Image
-              h={{ base: '3rem', sm: '3.5rem' }}
-              src="/images/icons/yellowPill.svg"
-              alt="Yellow Pill"
-            />
-            <Image
-              h={{ base: '3rem', sm: '3.5rem' }}
-              src="/images/icons/greenStar.svg"
-              alt="Arrows"
-            />
-            <Heading
-              color="#282826"
-              fontFamily="var(--font-roboto-flex)"
-              fontSize={{ base: '3rem', sm: '3.5rem' }}
-              fontWeight="900"
-            >
-              GOOD
-            </Heading>
-          </Flex> */}
           <Image src="/images/Hero.svg" alt="Hero" w="90%" mb="2rem" />
         </>
       )}
@@ -140,9 +81,9 @@ const HeroSection = () => {
         {isMobile ? (
           <Text
             color="#282826"
-            fontFamily="var(--font-roboto-flex)"
-            fontSize={{ base: "1.5rem", xl: "2rem" }}
-            textAlign={{ base: "center", xl: "left" }}
+            fontFamily="var(--font-roboto-condensed)"
+            fontSize={{ base: '1.5rem', xl: '2rem' }}
+            textAlign={{ base: 'center', xl: 'left' }}
             fontWeight="600"
             fontStyle="italic"
             mb={{ base: "2rem", xl: "0" }}
@@ -153,9 +94,9 @@ const HeroSection = () => {
         ) : (
           <Text
             color="#282826"
-            fontFamily="var(--font-roboto-flex)"
-            fontSize={{ base: "1.5rem", xl: "2rem" }}
-            textAlign={{ base: "center", xl: "left" }}
+            fontFamily="var(--font-roboto-condensed)"
+            fontSize={{ base: '1.5rem', xl: '2rem' }}
+            textAlign={{ base: 'center', xl: 'left' }}
             fontWeight="600"
             fontStyle="italic"
             mb={{ base: "4rem", xl: "0" }}
@@ -174,7 +115,7 @@ const HeroSection = () => {
             href="https://discord.hackthisfall.tech"
             target="_blank"
             color="#282826"
-            fontFamily="var(--font-roboto-flex)"
+            fontFamily="var(--font-roboto-condensed)"
             fontSize="1.5rem"
             fontWeight="600"
             bg="transparent"
@@ -193,7 +134,7 @@ const HeroSection = () => {
             href="https://bit.ly/htf5-pre"
             target="_blank"
             color="#fff"
-            fontFamily="var(--font-roboto-flex)"
+            fontFamily="var(--font-roboto-condensed)"
             fontSize="1.5rem"
             fontWeight="600"
             bg="#746BEB"

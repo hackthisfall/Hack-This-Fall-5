@@ -18,7 +18,6 @@ const HeroSection = () => {
     <Flex
       background="#F9F5F2"
       w="full"
-      h="100dvh"
       className="container-1200"
       justifyContent="center"
       alignItems="center"
@@ -35,8 +34,8 @@ const HeroSection = () => {
           >
             <Heading
               color="#282826"
-              fontFamily="var(--font-roboto-flex)"
-              fontSize={{ md: '5rem', lg: '6rem', xl: '7rem', '2xl': '9rem' }}
+              fontFamily="var(--font-roboto-condensed)"
+              fontSize={{ md: '6rem', lg: '7rem', xl: '8rem', '2xl': '10rem' }}
               fontWeight="600"
             >
               INNOVATE
@@ -71,8 +70,8 @@ const HeroSection = () => {
             />
             <Heading
               color="#282826"
-              fontFamily="var(--font-roboto-flex)"
-              fontSize={{ md: '5rem', lg: '6rem', xl: '7rem', '2xl': '9rem' }}
+              fontFamily="var(--font-roboto-condensed)"
+              fontSize={{ md: '6rem', lg: '7rem', xl: '8rem', '2xl': '10rem' }}
               fontWeight="600"
             >
               FOR GOOD
@@ -81,65 +80,6 @@ const HeroSection = () => {
         </>
       ) : (
         <>
-          {/* <Heading
-            color="#282826"
-            fontFamily="var(--font-roboto-flex)"
-            fontSize={{ base: '3rem', sm: '3.5rem' }}
-            fontWeight="900"
-            mb="0.5rem"
-          >
-            INNOVATE
-          </Heading>
-          <Flex
-            alignItems="center"
-            w="95%"
-            justifyContent="space-between"
-            mb="0.5rem"
-          >
-            <Heading
-              color="#282826"
-              fontFamily="var(--font-roboto-flex)"
-              fontSize={{ base: '3rem', sm: '3.5rem' }}
-              fontWeight="900"
-            >
-              FOR
-            </Heading>
-            <Image
-              h={{ base: '3rem', sm: '3.5rem' }}
-              src="/images/icons/skinArrows.svg"
-              alt="Star"
-            />
-            <Image
-              h={{ base: '3rem', sm: '3.5rem' }}
-              src="/images/icons/pill.svg"
-              alt="Pill"
-            />
-          </Flex>
-          <Flex
-            alignItems="center"
-            w="full"
-            justifyContent="space-between"
-            mb={{ base: '2rem', md: '5rem' }}
-          >
-            <Image
-              h={{ base: '3rem', sm: '3.5rem' }}
-              src="/images/icons/yellowPill.svg"
-              alt="Yellow Pill"
-            />
-            <Image
-              h={{ base: '3rem', sm: '3.5rem' }}
-              src="/images/icons/greenStar.svg"
-              alt="Arrows"
-            />
-            <Heading
-              color="#282826"
-              fontFamily="var(--font-roboto-flex)"
-              fontSize={{ base: '3rem', sm: '3.5rem' }}
-              fontWeight="900"
-            >
-              GOOD
-            </Heading>
-          </Flex> */}
           <Image src="/images/Hero.svg" alt="Hero" w="90%" mb="2rem" />
         </>
       )}
@@ -152,7 +92,7 @@ const HeroSection = () => {
         {isMobile ? (
           <Text
             color="#282826"
-            fontFamily="var(--font-roboto-flex)"
+            fontFamily="var(--font-roboto-condensed)"
             fontSize={{ base: '1.5rem', xl: '2rem' }}
             textAlign={{ base: 'center', xl: 'left' }}
             fontWeight="600"
@@ -166,7 +106,7 @@ const HeroSection = () => {
         ) : (
           <Text
             color="#282826"
-            fontFamily="var(--font-roboto-flex)"
+            fontFamily="var(--font-roboto-condensed)"
             fontSize={{ base: '1.5rem', xl: '1.7rem' }}
             textAlign={{ base: 'center', xl: 'left' }}
             fontWeight="600"
@@ -188,7 +128,7 @@ const HeroSection = () => {
             href="https://discord.hackthisfall.tech"
             target="_blank"
             color="#282826"
-            fontFamily="var(--font-roboto-flex)"
+            fontFamily="var(--font-roboto-condensed)"
             fontSize="1.5rem"
             fontWeight="600"
             bg="transparent"
@@ -198,7 +138,7 @@ const HeroSection = () => {
             borderRadius="full"
             border="2px solid #282826"
             boxShadow="2.95px 2.95px 0px 0px #000000"
-            _hover={{ bg: 'transparent', boxShadow: 'none' }}
+            _hover={{ bg: 'transparent', boxShadow: 'none', textDecoration: 'none' }}
           >
             Join Discord
           </Button>
@@ -206,7 +146,7 @@ const HeroSection = () => {
             as={Link}
             href="/virtual"
             color="#fff"
-            fontFamily="var(--font-roboto-flex)"
+            fontFamily="var(--font-roboto-condensed)"
             fontSize="1.5rem"
             fontWeight="600"
             bg="#746BEB"
@@ -216,7 +156,7 @@ const HeroSection = () => {
             borderRadius="full"
             border="2px solid #282826"
             boxShadow="2.95px 2.95px 0px 0px #000000"
-            _hover={{ bg: '#746BEB', boxShadow: 'none' }}
+            _hover={{ bg: '#746BEB', boxShadow: 'none', textDecoration: 'none' }}
           >
             Join Virtually <ArrowForwardIcon ml="0.5rem" />
           </Button>
