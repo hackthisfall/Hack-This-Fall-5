@@ -103,6 +103,7 @@ const FaqSection = () => {
                     fontFamily="var(--font-outfit)"
                     fontWeight="400"
                     fontSize="1.2rem"
+                    color="#808080"
                   >
                     {answer}
                   </AccordionPanel>
